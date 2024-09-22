@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento Personalizado de Xadrez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Gerador de Treino de Xadrez</h2>
+    <form id="training-form">
+        <label for="rating">Qual seu rating?</label>
+        <select id="rating">
+            <option value="iniciantes">Iniciante</option>
+            <option value="1000">1000</option>
+            <option value="1200">1200</option>
+            <option value="1400">1400</option>
+            <option value="1600">1600</option>
+            <option value="1800">1800</option>
+        </select>
+
+        <label for="hours">Quantas horas você pretende treinar por dia?</label>
+        <select id="hours">
+            <option value="0.5">30 minutos</option>
+            <option value="1">1 hora</option>
+            <option value="1.5">1 hora e 30 minutos</option>
+            <option value="2">2 horas</option>
+        </select>
+
+        <label>Quais dias você deseja treinar?</label>
+        <div id="days-selection">
+            <input type="checkbox" id="monday" />
+            <label for="monday">Segunda</label>
+            <input type="checkbox" id="tuesday" />
+            <label for="tuesday">Terça</label>
+            <input type="checkbox" id="wednesday" />
+            <label for="wednesday">Quarta</label>
+            <input type="checkbox" id="thursday" />
+            <label for="thursday">Quinta</label>
+            <input type="checkbox" id="friday" />
+            <label for="friday">Sexta</label>
+            <input type="checkbox" id="saturday" />
+            <label for="saturday">Sábado</label>
+            <input type="checkbox" id="sunday" />
+            <label for="sunday">Domingo</label>
+        </div>
+
+        <button type="button" id="generate-button">Gerar Treino</button>
+    </form>
+
+    <div id="training-plan"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
